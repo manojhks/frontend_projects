@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 700px;
+    margin: 20px;
+}
+header{
+    height: 100px;
+    background-color: rgb(74, 74, 74);
+}
+h1,h3{
+    text-align: center;
+    padding-top: 25px;
+}
+nav{
+    height: 70px;
+    background-color: darkgrey;
+}
+.ms{
+    height: 350px;
+    margin: 20px 220px;
+}
+.mc{
+    height: 350px;
+    width: 48.84%;
+    background-color: lightgray;
+    display: inline-block;
+    margin-right: 20px;
+}
+.sb{
+    height: 350px;
+    width: 48.84%;
+    background-color: darkslategray;
+    display: inline-block;
+}
+footer{
+    height: 135px;
+    background-color: darkgray;
+}

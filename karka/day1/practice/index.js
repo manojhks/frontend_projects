@@ -1,0 +1,6 @@
+console.log("Manojh")
+console.log(123)
+console.log(123+123)
+console.log("123"+"123")
+console.log("1"+5+3)
+console.log(1+5+"3")

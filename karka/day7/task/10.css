@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 700px;
+    margin: 20px;
+}
+.logo{
+    height: 100px;
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+h1{
+    text-align: center;
+    padding: 25px;
+}
+nav{
+    height: 100px;
+    background-color: lightgrey;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+a{
+    display: inline-block;
+    justify-content: space-around;
+    text-align: center;
+    margin-right: 4%;
+}
+.a1{
+    margin-left: 33%;
+}
+.feature{
+    height: 150px;
+    background-color: lightgrey;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+p{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+.col{
+    height: 150px;
+    margin-bottom: 20px;
+}
+.col1,.col2,.col3{
+    height: 150px;
+    width: 32.2609%;
+    background-color: lightgray;
+    display: inline-block;
+    margin: 0 auto;
+}
+.col1{
+    margin-right: 20px;
+}
+.col2{
+    margin-right: 20px;
+}
+.copy{
+    padding-top: 10px;
+    height: 135px;
+    background-color: lightgray;
+}

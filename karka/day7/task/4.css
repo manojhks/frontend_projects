@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.outer{
+    height: 700px;
+    background-color: purple;
+    border: dashed black 2px;
+    margin: 20px;
+    padding: 1px;
+}
+header{
+height: 200px;
+background-color: hotpink;
+margin: 30px 15px 15px 15px;
+border: solid;
+}
+.menu{
+    height: 400px;
+    width: 25.3%;
+    background-color: hotpink;
+    border: solid;
+    margin: 15px 7.5px 0 15px;
+    display: inline-block;
+}
+.mrf{
+    height: 400px;
+    width: 71.37%;
+    margin: 15px 15px 0 7.5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.m{
+    height: 192.5px;
+    width: 60%;
+    border: solid;
+    background-color: hotpink;
+    margin: 0px 7.5px 7.5 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+.r{
+    vertical-align: top;
+    height: 192.5px;
+    width: 38.58%;
+    border: solid;
+    background-color: hotpink;
+    margin: 0px 0px 7.5px 10.92px;
+    display: inline-block;
+}
+.f{
+    vertical-align: bottom;
+    height: 192.5px;
+    width: 100%;
+    background-color: hotpink;
+    border: solid;
+    margin: 7.5px 0 0 0;
+
+}

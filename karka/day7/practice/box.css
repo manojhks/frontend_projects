@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 300px;
+    width: 660px;
+    margin: 50px;
+    background-color: aquamarine;
+    border: solid;
+    display: inline-block;
+}
+.boxx{
+    height: 280px;
+    width: 200px;
+    margin: 8px 0 auto 10px;
+    border: solid 3px;
+    background-color: brown;
+    display: inline-block;
+}

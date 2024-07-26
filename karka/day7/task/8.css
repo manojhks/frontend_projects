@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outer{
+    height: 700px;
+    background-color: #fff;
+    margin: 20px;
+    border: solid;
+}
+header{
+    height: 150px;
+    background-color: rgb(255, 187, 221);
+}
+nav{
+    height: 75px;
+    background-color: plum;
+}
+.lm{
+    height: 400px;
+}
+.l{
+    height: 400px;
+    width: 25%;
+    background-color: palevioletred;
+    display: inline-block;
+}
+.m{
+    height: 400px;
+    width: 74.73%;
+    background-color: white;
+    display: inline-block;
+}
+footer{
+    height: 75px;
+    background-color: brown;
+}

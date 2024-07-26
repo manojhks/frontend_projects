@@ -1,0 +1,10 @@
+h1{
+text-align: center;
+background-color: #ff0000;
+color: aliceblue;
+height: 50px;
+width: 200px;
+padding-top: 12px;
+position: sticky;
+top: 10px;
+}

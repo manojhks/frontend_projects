@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: green;
+}
+.div1 {
+    height: 150px;
+    background-color: yellow;
+}
+
+.div2 {
+    height: 450px;
+    width: 25%;
+    display: inline-block;
+    background-color: blue;
+    vertical-align: top;
+    margin: 0px;
+}
+
+.div3 {
+    height: 450px;
+    width: 74.738%;
+    display: inline-block;
+    background-color: green;
+    vertical-align: top;
+    margin: 0px;
+}
+
+.div4 {
+    height: 142px;
+    background-color: brown;
+}
+

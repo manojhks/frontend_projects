@@ -1,0 +1,57 @@
+.outer{
+    height: 500px;
+    position: relative;
+    width: 700px;
+    background-color: #20acaf;
+    margin: 50px;
+    border: solid 0px;
+    border-radius: 0 30% 0;
+    -webkit-border-radius: 0 30% 0;
+    -moz-border-radius: 0 30% 0;
+    -ms-border-radius: 0 30% 0;
+    -o-border-radius: 0 30% 0;
+    overflow: hidden;
+}
+.hemilt,.hemibr{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.hemilt{
+    left: -75px;
+    top: -75px;
+}
+.hemibr{
+    right: -75px;
+    bottom: -75px;
+}
+.tl,.tt,.tr{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.tl{
+    top: 200px;
+    left: -100px;
+}
+.tt{
+    top: -100px;
+    left: 280px;
+}
+.tr{
+    top: 120px;
+    right: -100px;
+    z-index: 0;
+}

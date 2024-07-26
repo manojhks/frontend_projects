@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+}
+.outer{
+    position: absolute;
+    height: 700px;
+    padding: 20px;
+    left: 24%;
+}
+img{
+    height: 400px;
+    width: 800px;
+}
+.c1,.c2{
+    position: relative;
+    height: 110px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgb(213, 213, 213);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.h1{
+    position: absolute;
+    left: 35px;
+    top: 10px;
+}
+.h2{
+    position: absolute;
+    left: 25px;
+    top: 40px;
+}
+.h3{
+    position: absolute;
+    left: 26px;
+    top: 70px;
+}
+.c1{
+    left: 150px;
+    top: -55px;
+}
+.c2{
+    left: 750px;
+    top: -165px;
+}
+h1{
+    position: absolute;
+    text-align: center;
+    top: 530px;
+    padding: 0 239px;
+}
+p{
+    position: inherit;
+    top: 600px;
+    justify-content: center;
+    padding: 20px;
+}

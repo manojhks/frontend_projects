@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 700px;
+    margin: 20px;
+    background-color: #909090;
+}
+header{
+    height: 80px;
+    text-align: center;
+    h1{
+        font-weight: 1500;
+        text-align: center;
+        font-size:xx-large;
+        padding-top: 20px;
+        color: white;
+        text-shadow: #2f2f2f 2px 1px;
+    }
+}
+.inner{
+    height: 600px;
+    width: 80%;
+    background-color: #909090;
+    margin: 0 auto 20px;
+}
+nav{
+    height: 65px;
+    background-color: hotpink;
+    margin-bottom: 10px;
+    
+}
+ol{
+    list-style: none;
+    display: inline-block;
+}
+ol > li{
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    font-weight:700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input,button{
+    display: inline-block;
+    size: 30px;
+}
+input{
+    margin-left: 460px;
+    padding: 5px;
+}
+button{
+    padding: 5px;
+    color: white;
+    background-color: #2f2f2f;
+}
+.main{
+    height: 460px;
+    width: 80%;
+    padding: 10px;
+    background-color: #ffffff;
+    display: inline-block;
+    h2{
+        font-weight: 1500;
+        text-align: center;
+        font-style: italic;
+        font-size:xx-large;
+        margin: 10px 0 7px;
+    }
+    h3{
+        font-weight: 500;
+        font-size:x-large;
+        margin: 10px 0;
+        padding-left: 7px;
+    }
+    p{
+        padding-left: 15px;
+        text-align: justify;
+        margin: 5px;
+    }
+}
+.aside{
+    height: 460px;
+    width: 227px;
+    margin: 0 -4px 0 8px;
+    padding: 10px;
+    background-color: hotpink;
+    display: inline-block;
+    vertical-align: top;
+    h2{
+        font-weight: 1500;
+        text-align: center;
+        font-style: italic;
+        font-size:xx-large;
+        margin: 10px;
+    }
+}
+ul{
+    list-style-type: disc;
+    padding-left: 9px;
+    li{
+        text-decoration: underline;
+        color: blue;
+        margin: 7px;
+    }
+}
+footer{
+    height: 45px;
+    margin: 10px auto;
+    background-color: #fff;
+    p{
+        padding-top: 13px;
+        padding-left: 10px;
+    }
+}

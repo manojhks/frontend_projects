@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body
+{   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer{
+    display: flex;
+    height: 509px;
+    box-shadow: rgb(207, 207, 207) 0px 5px 1px;
+    width: 80%;
+    background-color: #c3c3c3;
+    border-radius: 50px;
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.left{
+    background-image: url(https://img.freepik.com/free-vector/worldwide-connection-gray-background-illustration-vector_53876-61772.jpg?t=st=1721902911~exp=1721906511~hmac=8622215009f49a2fee8efe2e1f521a1b1d672d0556c097792db674fb6d331817&w=1060);
+    flex: 3;
+    header{
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        background-color: #0da3cdc3;
+        padding: 10px 0 0 140px;
+        color: rgb(255, 255, 255);
+        .img1{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: -150px;
+            top: -50px;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+        }
+        .img2{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: -150px;
+            top: -100px;
+            transform: rotate(90deg);
+        }
+        .img3{
+            height: 200px;
+            width: 200px;
+            position: relative;
+            left: -150px;
+            top: -190px;
+            transform: rotate(90deg);
+        }
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:20px 0 0 90px;
+        .row1{
+            display: flex;
+            justify-content: space-around;
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+                color: #4a4a4a;
+            }
+            h3{
+                font-size: 28px;
+            }
+        }
+        .row2{
+            width: 60%;
+            display: flex;
+            padding: 70px 0 0 290px;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            i{
+                color: black;
+                margin: 0 20px;
+            }
+        }
+        .row3{
+            height: 100px;
+            width: 400px;
+            display: flex;
+            margin:80px 0 0 50px;
+            justify-content: space-between;
+            p{
+                font-size: 18px;
+                letter-spacing: 1px;
+                color: red;
+            }
+            h3{
+                font-size: 28px;
+            }
+
+        }
+    }
+}
+.right{
+    flex: 1;
+    background-color: #f3f3f3;
+    header{
+        height: 80px;
+        background-color: #122368;
+        color: white;
+        display: flex;
+        font-size: 12px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main{
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 10px;
+        p{
+            font-size: 10px;
+            letter-spacing: 1px;
+            color: #4a4a4a;
+        }
+        h3{
+            font-size: 17px;
+        }
+        .flightseat{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    img{
+        margin: 0;padding: 0;
+        height: 170px;
+        width: 200px;
+        position: relative;
+        left: 40px;
+        top: 10px;
+    }
+}
+.dot{
+    z-index: 6;
+    height: 510px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    left: -297px;
+    .circle{
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+}

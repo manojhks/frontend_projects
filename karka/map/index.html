@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Map with Leaflet</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 600px; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map and set its view to Nagercoil
+        var map = L.map('map').setView([8.1773, 77.4344], 13);
+
+        // Add a tile layer to the map (OpenStreetMap tiles in this case)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Example JSON data with categories
+        var jsonData = [
+            {"name": "Karka software Academyemy", "latitude": 8.220010, "longitude": 77.4317944, "category": "Academy"},
+            {"name": "Nagercoil Junction", "latitude": 8.177615, "longitude": 77.442627, "category": "Railway"}
+        ];
+
+        // Create Layer Groups for each category
+        var karka = L.layerGroup();
+        var nglJunction = L.layerGroup();
+
+        // Function to add markers to the appropriate layer
+        function addMarkers(data) {
+            data.forEach(function(location) {
+                var marker = L.marker([location.latitude, location.longitude]).bindPopup(location.name);
+                if (location.category === "Academy") {
+                    marker.addTo(karka);
+                } else if (location.category === "Railway") {
+                    marker.addTo(nglJunction);
+                }
+            });
+        }
+
+        // Add markers to the respective layers
+        addMarkers(jsonData);
+
+        // Add layers to the map
+        karka.addTo(map);
+        nglJunction.addTo(map);
+
+        // Add layer control
+        var baseLayers = {};
+        var overlays = {
+            "Academy": karka,
+            "Railway": nglJunction,
+            "All Data": L.layerGroup([karka, nglJunction])
+        };
+
+        L.control.layers(baseLayers, overlays).addTo(map);
+    </script>
+</body>
+</html>

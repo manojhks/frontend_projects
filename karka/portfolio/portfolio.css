@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:
+    url(./Untitled\ design\ \(1\).png);
+    background-clip: border-box;
+    background-blend-mode: saturation;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+header{
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    
+}
+.titlebar{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+/* .headingtitle{
+    color: aliceblue;
+    margin-left: 70px;
+    font-size: 32px;
+} */
+ul{
+    margin-top: 9px;
+    display: flex;
+    justify-content: space-evenly;
+    li{
+        margin-left: 110px;
+        flex: 1;
+        text-decoration: none;
+        list-style-type: none;
+        color: rgb(95, 0, 96);
+        text-shadow: #fff 1.5px 1px 10px;
+        font-size: 20px;
+    }
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.intro{
+    flex: 2;
+    margin-left: 17%;
+    margin-top: 10%;
+    .headingintro,.headingintrop,.paraintro{
+        margin-bottom: 12px;
+    }
+    .headingintro,.headingintrop{
+        text-shadow: rgb(204, 0, 255) 2px -2px 2px,red -2px 2px 2px;
+    }
+    .headingintro{
+        font-size: 60px;
+    }
+    .headingintrop{
+        font-size: 40px;
+        font-style: italic;
+    }
+    .paraintro{
+        width: 500px;
+        color: rgb(81, 0, 81);
+    }
+    .hirebutton,.portfoliobutton{
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow:#fff 1.5px 0px 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .hirebutton{
+        color: aliceblue;
+        background-color: #aa00f8;
+        margin-right: 10px;
+    }
+    .portfoliobutton{
+        color: #580181;
+        background-color: #fff;
+    }
+    .social{
+        flex-direction: column;
+        margin-top: 20px;
+        li{
+            margin-left: 0;
+            margin-top: 20px;
+            color: rgb(55, 17, 91);
+            text-shadow: #fff 1.5px 1px 10px;
+        }
+    }
+}

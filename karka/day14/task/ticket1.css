@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.outer{
+    height: 400px;
+    width: 80%;
+    background-color: #898b88;
+    margin: 171px auto;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    overflow: hidden;
+}
+header{
+    height: 70px;
+    padding-top: 20px;
+    color: #fff;
+    display: flex;
+    background-color: #329b02;
+    justify-content: space-around;
+    .laero{
+        position: relative;
+        left: -50px;
+        height:110px;
+        transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+}
+    .raero{
+        height: 60px;
+        position: relative;
+        left: 30px;
+    }
+    .left{
+        position: relative;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: -1px;
+        right: 150px;
+        top: 10px;
+    }
+    .center{
+        position: relative;
+        font-size: 40px;
+        font-family:monospace;
+        right: 60px;
+        letter-spacing: -1px;
+    }
+}
+main{
+    background-color: #fff;
+    height: 274px;
+    display: flex;
+    flex-wrap: wrap;
+    .namerp,.classrp,.arrivalrp,.departurerp,.norp,.seatrp,.namep,.seatp,.arrivalp,.departurep,.classp,.nop,.datep,.dtp{
+        color: #7da26c;
+    }
+}
+.rightdetails{
+    padding-left: 90px;
+    flex: 1;
+    .namer,.namerp,.classr,.classrp,.arrivalrp,.arrivalr,.departurer,departurerp,.norp,.nor,.dater,.timer,.seatr,.seatrp{
+        position: relative;
+    }
+    .namer{
+        font-size: 18px;
+        top: 20px;
+    }
+    .namerp{
+        top: 20px;
+        font-size: 10px;
+    }
+    .classr{
+        bottom: 22px;
+        left: 240px;
+        font-size: 22px;
+    }
+    .classrp{
+        bottom: 22px;
+        left: 240px;
+        font-size: 10px;
+    }
+    .arrivalrp{
+        font-size: 10px;
+    }
+    .arrivalr{
+        bottom: 19.2px;
+        left: 34px;
+        font-size: 18px;
+    }
+    .departurerp{
+        font-size: 10px;
+    }
+    .departurer{
+        bottom: 19.2px;
+        left: 34px;
+        font-size: 18px;
+    }
+    .norp{
+        font-size: 10px;
+    }
+    .nor{
+        bottom: 19.6px;
+        left: 54px;
+        font-size: 18px;
+    }
+    .dater{
+        top: 70px;
+    }
+    .timer{
+        top: 51px;
+        left: 130px;
+    }
+    .seatr{
+        left: 230px;
+        font-size:22px ;
+    }
+    .seatrp{
+        left: 237px;
+        font-size: 10px;
+    }
+
+}
+.dashed{
+    height: 400px;
+    width: 200px;
+    position: absolute;
+    /* border-style:dashed; */
+    border-left:dashed green;
+    right: 270px;
+}
+.leftdetails{
+    flex: 2.3;
+    padding-left: 150px;
+    .namep,.seatp,.arrivalp,.departurep,.classp,.nop,.datep,.dtp,.name,.seat,.arrival,.departure,.class,.no,.date,.dt,.barcode,.qrcode{
+        position: relative;
+    }
+    .namep,.seatp,.arrivalp,.departurep,.classp,.nop,.datep,.dtp{
+        font-size: 12px;
+    }
+    .name,.seat,.arrival,.departure,.class,.no,.date,.dt{
+        font-size: 28px;
+    }
+    .name,.namep{
+        top: 20px;
+    }
+    .seat,.seatp{
+        left: 400px;
+        top: -20px;
+    }
+    .arrival,.departure{
+        top: 30px;
+        left: 40px;
+    }
+    .arrivalp,.departurep{
+        top: 58px;
+    }
+    .class,.classp{
+        left: 400px;
+    }
+    .nop{
+        top: 28px;
+    }
+    .no{
+        left: 70px;
+    }
+    .datep{
+        left: 220px;
+        bottom: 19px;
+    }
+    .date{
+        left: 260px;
+        bottom: 47px;
+    }
+    .dtp{
+        bottom: 64px;
+        left: 450px;
+    }
+    .dt{
+        left: 560px;
+        bottom: 92.7px;
+    }
+    .barcode{
+        left: -420px;
+        font-size: 45px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
+.qrcode{
+    bottom: 400px;
+    left: 540px;
+    font-size: 175px;
+}
+}
+.foot{
+    height: 40px;
+    background-color: #329b02;
+}
+body{
+    background-color: #eaeaea;
+}
+.outer{
+    box-shadow: #cbcbcb 12px 12px 2px;
+}
