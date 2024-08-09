@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <!-- <div id="division">Hello Peeps!!!</div>
+    <button onclick="handleClick()">Click</button>
+    <script>
+        function handleClick(){
+            let division=document.getElementById("division");
+            division.innerHTML="Karka"
+            console.log(division);
+            division.innerHTML="<strong>Karka</strong>"
+            console.log(division);
+        }
+    </script> -->
+
+    <!-- <div id="example"><span style="display: none;">Hidden Text</span>Visible Text</div>
+    <button onclick="handleHidden()">Click</button>
+    <script>
+        function handleHidden(){
+            let example=document.getElementById("example");
+            console.log(example.innerText)
+        }
+    </script> -->
+
+    <!-- <div id="example"><span style="display: none;">Hidden Text</span>Visible Text</div>
+    <button onclick="handleHidden()">Click</button>
+    <script>
+        function handleHidden(){
+            let example=document.getElementById("example").textContent;
+            console.log(example)
+        }
+    </script> -->
+
+    <!-- <div id="division">Hello Peeps!!!</div>
+    <button onclick="handleClick()">Click</button>
+    <script>
+        function handleClick(){
+            let division=document.getElementById("division");
+            console.log(division.innerHTML="Karka");
+            console.log(division.innerText="Kaka");
+            console.log(division.textContent="Kark");
+        }
+    </script> -->
+
+    <!-- <input type="text" name="name" id="name">
+    <input type="password" name="password" id="password">
+    <button onclick="handleClick()">Click</button>
+    <script>
+        function handleClick(){
+            let name=document.getElementById("name").value;
+            let password=document.getElementById("password").value;
+            let details={
+                myName:name,
+                myPassword:password
+            }
+            console.log(details)
+            document.getElementById('name').value=""
+            document.getElementById('password').value=""
+        }
+    </script> -->
+
+    <!-- <input type="text" id="input">
+    <p id="para"></p>
+    <button onclick="handleClick()">Show</button>
+    <button onclick="handleRemove()">Remove</button>
+    <script>
+        function handleClick(){
+        let input=document.getElementById("input").value;
+        let para=document.getElementById("para");
+        para.innerText=input;
+        document.getElementById("input").value=""
+        }
+
+         function handleRemove(){
+        para.remove()
+         }
+    </script> -->
+
+    <input type="text" id="input">
+    <p id="para"></p>
+    <button onclick="handleClick()">Show</button>
+    <button onclick="handleRemovehead()">Remove Bottom</button>
+    <button onclick="handleRemovepara()">Remove Top</button>
+    <button onclick="handleAdd()">Add</button>
+   
+    <script>
+        function handleClick(){
+        let input=document.getElementById("input").value;
+        let para=document.getElementById("para");
+        para.innerText=input;
+        document.getElementById("input").value="";
+        }
+
+        function handleRemovepara(){
+        para.remove();
+        }
+
+        function handleRemovehead(){
+        let heading=document.getElementById('head')
+        heading.remove()
+        }
+
+        function handleAdd(){
+        let heading=document.createElement('h1')
+        heading.innerHTML="Hey"
+        heading.setAttribute("id","head")
+        let body=document.getElementById('body')
+        body.appendChild(heading)
+        }
+    </script>
+
+</body>
+</html>

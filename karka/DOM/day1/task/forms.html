@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        
+        <input type="text" id="fname">
+        <input type="password" id="password">
+        <input type="date" id="dob">
+        <input type="number" id="age">
+
+        <select name="place" id="place">
+                <option value="Nagercoil">Nagercoil</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Pondy">Pondy</option>
+                <option value="Trichy">Trichy</option>
+        </select>
+
+        <input type="radio" class="gender" name="gender" id="male" value="Male"><label for="male">Male</label>
+        <input type="radio" class="gender" name="gender" id="female" value="Female"><label for="male">Female</label>
+        <input type="radio" class="gender" name="gender" id="others" value="Others"><label for="male">Others</label>
+
+        <input type="checkbox" class="skill" name="skills" id="html" value="HTML"><label for="html">HTML</label>
+        <input type="checkbox" class="skill" name="skills" id="css" value="CSS"><label for="css">CSS</label>
+        <input type="checkbox" class="skill" name="skills" id="javascript" value="Javascript"><label for="javascript">Javascript</label>
+        <input type="checkbox" class="skill" name="skills" id="reactjs" value="ReactJS"><label for="reactjs">React JS</label>
+        <input type="checkbox" class="skill" name="skills" id="github" value="Github"><label for="github">GitHub</label>
+        <button onclick="handleClick(event)">Click</button>
+    </form>
+    <script>
+        function handleClick(e){
+            e.preventDefault()
+            let fname=document.getElementById("fname").value;
+            let password=document.getElementById("password").value;
+            let dob=document.getElementById("dob").value;
+            let age=document.getElementById("age").value;
+            let place=document.getElementById("place").value;
+            let gender=document.getElementsByClassName("gender")
+            for(let i=0;i<gender.length;i++){
+                if(gender[i].checked){
+                    gender=gender[i].value
+                }
+            }
+            let skill=document.querySelectorAll(".skill")
+            let arr=[]
+            for(let i=0;i<skill.length;i++){
+                if(skill[i].checked){
+                    arr.push(skill[i].value)
+                }
+                else{
+                    continue
+                }
+            }
+
+            let form=document.getElementById("form")
+            let details={
+                Name:fname,
+                Password:password,
+                DOB:dob,
+                Age:age,
+                Place:place,
+                Gender:gender,
+                Skills:arr
+            }
+            console.log(details)
+            // document.getElementById('fname').value="";
+            // document.getElementById('password').value="";
+            // document.getElementById('dob').value="";
+            // document.getElementById('age').value="";
+            // document.getElementById('place').value="";
+            form.reset()
+        }
+
+    </script>
+</body>
+</html>

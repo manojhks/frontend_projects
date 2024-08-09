@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    color: black;
+}
+table, td, th {
+  border: 1px solid black;
+  width: fit-content;
+}
+</style>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="myCreateFunction()">Create row</button>
+<br><br>
+<table id="myTable">
+  <tr>
+    <th>S.No</th>
+    <th>Task</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+</table>
+<br>
+
+<script>
+    let arr=[];
+function myCreateFunction() {
+  let table = document.getElementById("myTable");
+  let input=document.getElementById("input").value;
+  arr.push(input)
+  document.getElementById("input").value = "";
+  let row = table.insertRow(-1);
+  let cell1 = row.insertCell(0);
+  let cell2 = row.insertCell(1);
+  let cell3 = row.insertCell(2);
+  let cell4 = row.insertCell(3);
+  let len = arr.length - 1;
+  cell1.innerText = len + 1;
+  cell2.innerText = input;
+  cell3.innerHTML = `<button>Edit</button>`;
+  cell4.innerHTML = `<button onclick="myDeleteFunction(${len})">Delete</button>`;
+  console.log(arr);
+}
+function myDeleteFunction(i) {
+  document.getElementById("myTable").deleteRow(i + 1);
+  arr.splice(i, 1);
+  console.log(arr);
+}
+</script>
+
+</body>
+</html>

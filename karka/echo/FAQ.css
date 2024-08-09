@@ -1,0 +1,113 @@
+.headecho{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.downloadnow{
+    border-radius:30px;
+    color: #fbb244;
+    background-color: #081158;
+    border: solid #081158;
+    padding: 6px 20px;
+}
+.downloadnow:hover{
+    background-color: white; color: unset; border: solid gainsboro;
+}
+.howwework{
+    background-color: #081158;
+    border-color: #081158;
+    color: white;
+    border-radius:30px;
+    padding: 12px 30px;
+}
+.howwework:hover{
+    background-color: none;
+    border-color: #081158;
+    color: #081158;
+}
+.contactus,.aboutusbutton{
+    color: #081158;
+    border-radius:30px;
+    padding: 12px 30px;
+    border: #081158 solid 1px;
+}
+.contactus:hover,.aboutusbutton:hover{
+    background-color: #081158;
+    color: white;
+}
+.welcome,.aboutus,.services{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #FBB244;
+    background-color: rgba(251, 178, 68, 0.197);
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+}
+.expert,.agency,.ourservices{
+    font-size: 40px;
+    font-weight: 700;
+    color: #081158;
+    font-family: "Montserrat",sans-serif;
+}
+p{
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.card img{
+    height: 50px;
+}
+h5{
+    font-family: "Montserrat",sans-serif;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    top: 0.8vh;
+    color: gray;
+    margin-right: 2%;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.card-text{
+    text-align: justify;
+}
+h4{
+    font-size:larger;
+    font-family: "Montserrat",sans-serif;
+}
+.sm{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;align-items: center;
+    background-color: #081158;
+}
+
+.details{
+    background-color: #fff;
+    color: black;
+    border: none;
+    font-weight: bolder;
+    padding: 20px;
+    transition: 0.3s;
+}
+.details:hover{
+    background-color: #e6e6e6;
+    color: black;
+    transition: 0.3s;
+}
+.details[aria-expanded="true"]{
+    background-color: #081158;
+    color: white;
+}
+.detailp{
+    border: none;
+    color: darkgray;
+}

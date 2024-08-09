@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let a=10;
+        // localStorage.setItem("num",a);
+        // let get=localStorage.getItem("num")
+        // console.log(get)
+        let a=[1,2,3,4,5];
+        
+        // localStorage.setItem("num",a);
+        // let get =localStorage.getItem("num")
+        // console.log(get)
+
+        let b=JSON.stringify(a)
+        localStorage.setItem("arr",b)
+        let get=localStorage.getItem("arr")
+        let convert=JSON.parse(get)
+        console.log(convert)
+    </script>
+</body>
+</html>

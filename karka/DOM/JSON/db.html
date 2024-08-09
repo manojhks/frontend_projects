@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <table id="mytable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </table>
+    <button onclick="calls()">Click</button>
+    <script>
+        function calls(){
+        fetch("db.json").then((response)=>response.json().then((res)=>{
+            console.log(res.details)
+            let table=document.getElementById("mytable");
+            const data=res.details
+            for(let i=0;i<data.length;i++){
+                let row = table.insertRow(-1);
+                let cell1 = row.insertCell(0);
+                let cell2 = row.insertCell(1);
+                cell1.innerText=res.details[i].name;
+                cell2.innerText=res.details[i].age;
+            }
+        }))
+    }
+    </script>
+</body>
+</html>

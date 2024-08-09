@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="input" id="userinput">
+    <button onclick="jsonArray()">Click to Add</button>
+    <script>
+        function jsonArray(){
+        let itemArray=localStorage.getItem("arr")? JSON.parse(localStorage.getItem("arr")):[]
+        let input=document.getElementById("userinput").value;
+        itemArray.push(input)
+        localStorage.setItem("arr",JSON.stringify(itemArray))
+        let c=JSON.parse(localStorage.getItem("arr"))
+        for(let i=0;i<c.length;i++){
+            console.log(c[i])
+        }
+        document.getElementById("userinput").value=""
+    }
+    </script>
+</body>
+</html>

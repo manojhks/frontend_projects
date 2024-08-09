@@ -1,47 +1,115 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.outer{
-    width: 70%;
-    height: 300px;
-    background-color: #ff0000;
-    /* margin: 170px auto; */
+body {
+    background-color: #b6000f;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.left{
-    flex: 1.5;
+
+.ticket {
+    display: flex;
+    width: 800px;
+    height: 300px;
+    background-color: #fff;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+.left {
+    background-color: #ff0000;
+    padding: 20px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
-    border: solid;
-}
-.head1{
     color: white;
+}
+
+.admit {
+    font-size: 20px;
     text-align: center;
     letter-spacing: 2px;
 }
-.number{
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    h1{
-        text-align: center;
-        flex: 1;
-        font-size: 200px;
-    }
-    div{
-        color: black;
-        flex: 1;
-        font-size: 30px;
-        position: relative;
-        top: 90px;
-        right: 70px;
-    }
+
+.separator {
+    margin: 0 10px;
 }
 
-.right{
-    flex: 3;
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.number h1 {
+    font-size: 150px;
+    margin-right: 10px;
+}
+
+.number div {
+    font-size: 20px;
+    color: black;
+}
+
+.black {
+    color: black;
+}
+
+.right {
+    padding: 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.title .hash{
+    color: #ff0000;
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+.box1,.box2{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: #b6000f;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.box1{
+    right: 429px;
+    bottom: 126px;
+}
+.box2{
+    right: 476.5px;
+    bottom: -174px;
+}
+.invite {
+    font-size: 88px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.details {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.overline {
+    text-decoration: overline;
+}
+

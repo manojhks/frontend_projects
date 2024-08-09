@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="add" id="data">
+        <button onclick="handleClick(event)" id="add">Add</button>
+    </form>
+
+    <script>
+        let arr=[];
+        function handleClick(e){
+            e.preventDefault()
+            let data=document.getElementById('data').value;
+            arr.push(data)
+            console.log(arr)
+            document.getElementById('data').value="";
+        }
+    </script>
+</body>
+</html>
