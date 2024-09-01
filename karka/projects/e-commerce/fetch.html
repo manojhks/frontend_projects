@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ecommerce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <h1>Amazon</h1>
+        <a class="cartsymbol" href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;" id="cartbox"></i></a>
+    </nav>
+    <div class="container"></div>
+
+    <script>
+        const cart = [];
+        const storage=localStorage.getItem("Cart")
+        const storageObj=JSON.parse(storage);
+        console.log(storageObj)
+        const handleClick = (book) => {
+            cart.push(book);
+            localStorage.setItem("Cart",JSON.stringify(cart))
+            if(book===storageObj.bookname)
+        {
+            localStorage.setItem("Cart",book.count+1)
+        }
+        const count=JSON.parse(localStorage.getItem("Cart"))
+        const cartvalues=count.reduce((count,bookname)=>{
+            count[bookname]=(count[bookname]||0)+1;
+            return count
+        },{})
+        console.log(cartvalues)
+        }
+
+        const bookdata = async () => {
+            try {
+                const response = await fetch("db.json");
+                const data = await response.json();
+                const container = document.querySelector(".container");
+
+                data.books.forEach((book) => {
+                    const card = document.createElement("div");
+                    card.classList.add('card');
+
+                    card.innerHTML = `
+                        <div style="height: 200px; width: 200px; display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                            <img class="image" style="width: 7.5rem;" src="${book.image}" alt="${book.bookname}" />
+                        </div>
+                        <p class="bookname">${book.bookname}</p>
+                        <p class="author">${book.author}</p>
+                        <p class="price">${book.price}</p>
+                        <button class="button add" onclick='handleClick(${JSON.stringify(book.bookname)})'>Add to Cart</button>
+                    `;
+
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        bookdata();
+    </script>
+</body>
+</html>

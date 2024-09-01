@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #e0e0e0;
+    i{
+        font-size:x-large;
+    }
+    h1{
+        letter-spacing: 1.5px;
+        font-weight:700;
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: 210px;
+    padding: 5px;
+    margin: 15px;
+    border: solid 2px gainsboro;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.163);
+}
+.bookname {
+    font-size: larger;
+    font-weight: bold;
+    padding: 4px 4px;
+    margin-top: 10px;
+}
+.image {
+    margin: 0 auto;
+    cursor: pointer;
+}
+.author {
+    font-size: small;
+    color: cornflowerblue;
+    padding: 1px 4px;
+}
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 4px 4px;
+}
+.button ,.view:hover{
+    padding: 10px 15px;
+    margin: 4px;
+    background-color: #b10e96;
+    color: wheat;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: inset 1px #b10e96;
+}
+.view, .add:hover{
+    background-color: #fff;
+    color: black;
+    border: inset 1px #b10e96;
+}
+.copies{
+    font-size: 12px;
+    padding: 1px 4px;
+}
+.cartsymbol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 50px;
+    width: 55px;
+    padding: 4px;
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+}
+.cartsymbol:hover{
+    background-color: #fff;
+}

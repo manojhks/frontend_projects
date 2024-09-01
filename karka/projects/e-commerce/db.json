@@ -1,0 +1,158 @@
+{
+    "books": [
+        {
+            "bookname": "The Alchemist",
+            "author": "Paulo Coelho",
+            "price": "₹275",
+            "image": "https://m.media-amazon.com/images/I/61HAE8zahLL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 5
+        },
+        {
+            "bookname": "Metamorphosis",
+            "author": "Franz Kafka and David Wyllie",
+            "price": "₹109",
+            "image": "https://m.media-amazon.com/images/I/71qR+kG+43L._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 2
+        },
+        {
+            "bookname": "Unposted Letter",
+            "author": "Mahatria Ra",
+            "price": "₹255",
+            "image": "https://m.media-amazon.com/images/I/71miegpGjsL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 11
+        },
+        {
+            "bookname": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "price": "₹399",
+            "image": "https://m.media-amazon.com/images/I/81gepf1eMqL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 8
+        },
+        {
+            "bookname": "1984",
+            "author": "George Orwell",
+            "price": "₹249",
+            "image": "https://m.media-amazon.com/images/I/81fcLJo+FNL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 6
+        },
+        {
+            "bookname": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "price": "₹199",
+            "image": "https://m.media-amazon.com/images/I/817+192hZyS._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 4
+        },
+        {
+            "bookname": "Pride and Prejudice",
+            "author": "Jane Austen",
+            "price": "₹150",
+            "image": "https://m.media-amazon.com/images/I/91fDvMK+aEL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 7
+        },
+        {
+            "bookname": "The Book Thief",
+            "author": "Markus Zusak",
+            "price": "₹320",
+            "image": "https://m.media-amazon.com/images/I/91JGwQlnu7L._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 9
+        },
+        {
+            "bookname": "Animal Farm",
+            "author": "George Orwell",
+            "price": "₹150",
+            "image": "https://m.media-amazon.com/images/I/714p+GZy51L._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 5
+        },
+        {
+            "bookname": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "price": "₹350",
+            "image": "https://m.media-amazon.com/images/I/71jKeGU9nKL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 3
+        },
+        {
+            "bookname": "Fahrenheit 451",
+            "author": "Ray Bradbury",
+            "price": "₹220",
+            "image": "https://m.media-amazon.com/images/I/71OFqSRFDgL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 7
+        },
+        {
+            "bookname": "Jane Eyre",
+            "author": "Charlotte Brontë",
+            "price": "₹280",
+            "image": "https://m.media-amazon.com/images/I/81pwJjgcwwL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 6
+        },
+        {
+            "bookname": "Wuthering Heights",
+            "author": "Emily Brontë",
+            "price": "₹199",
+            "image": "https://m.media-amazon.com/images/I/71J-w5egonL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 4
+        },
+        {
+            "bookname": "Brave New World",
+            "author": "Aldous Huxley",
+            "price": "₹299",
+            "image": "https://m.media-amazon.com/images/I/51CWnp7rtlL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 5
+        },
+        {
+            "bookname": "Moby Dick",
+            "author": "Herman Melville",
+            "price": "₹150",
+            "image": "https://m.media-amazon.com/images/I/716w+-OTDLL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 3
+        },
+        {
+            "bookname": "The Odyssey",
+            "author": "Homer",
+            "price": "₹499",
+            "image": "https://m.media-amazon.com/images/I/71I9il-sk2L._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 2
+        },
+        {
+            "bookname": "The Brothers Karamazov",
+            "author": "Fyodor Dostoevsky",
+            "price": "₹399",
+            "image": "https://m.media-amazon.com/images/I/61D6oGBinEL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 5
+        },
+        {
+            "bookname": "Crime and Punishment",
+            "author": "Fyodor Dostoevsky",
+            "price": "₹349",
+            "image": "https://m.media-amazon.com/images/I/91y4Xf0a7pL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 4
+        },
+        {
+            "bookname": "War and Peace",
+            "author": "Leo Tolstoy",
+            "price": "₹550",
+            "image": "https://m.media-amazon.com/images/I/71eK3ri8ROL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 3
+        },
+        {
+            "bookname": "The Divine Comedy",
+            "author": "Dante Alighieri",
+            "price": "₹450",
+            "image": "https://m.media-amazon.com/images/I/61w-+7-mjHL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 2
+        },
+        {
+            "bookname": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde",
+            "price": "₹199",
+            "image": "https://m.media-amazon.com/images/I/81CNuKIIicL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 8
+        },
+        {
+            "bookname": "A Tale of Two Cities",
+            "author": "Charles Dickens",
+            "price": "₹149",
+            "image": "https://m.media-amazon.com/images/I/91eLUjyFgOL._AC_UL480_FMwebp_QL65_.jpg",
+            "count": 9
+        }
+    ]
+}

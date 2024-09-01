@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ecommerce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .minus, .plus {
+            padding: 5px;
+            width: 40px;
+            font-size: x-large;
+            background-color: #d0d0d094;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .minus:hover, .plus:hover {
+            background-color: #f5f5f5;
+        }
+        .bookcount {
+            padding: 0 10px;
+            font-size: x-large;
+        }
+        .amazonlink{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1><a href="./fetch.html" class="amazonlink">Amazon</a></h1>
+        <a class="cartsymbol"><i class="fa-solid fa-cart-shopping" style="color: #000000;" id="cartbox"></i></a>
+    </nav>
+    <div class="container"></div>
+
+    <script>
+        const increase = (countElement, book) => {
+            let count = parseInt(countElement.textContent);
+            if (count < book.count) {
+                countElement.textContent = ++count;
+                if (count === book.count) {
+                    countElement.nextElementSibling.disabled = true;
+                }
+            }
+        };
+
+        const decrease = (countElement) => {
+            let count = parseInt(countElement.textContent);
+            if (count > 0) {
+                countElement.textContent = --count;
+                countElement.nextElementSibling.disabled = false;
+            }
+        };
+
+        const bookdata = async () => {
+            try {
+                const response = await fetch("db.json");
+                const data = await response.json();
+                const container = document.querySelector(".container");
+
+                data.books.forEach((book) => {
+                    const card = document.createElement("div");
+                    card.classList.add('card');
+
+                    card.innerHTML = `
+                        <div style="height: 200px; width: 200px; display: flex; align-items: center; justify-content: center; margin: 0; padding: 0;">
+                            <img class="image" style="width: 8.3rem;" src="${book.image}" alt="${book.bookname}" />
+                        </div>
+                        <p class="bookname">${book.bookname}</p>
+                        <p class="author">${book.author}</p>
+                        <p class="price">${book.price}</p>
+                        <button class="minus">-</button>
+                        <p class="bookcount" style="display:inline;">0</p>
+                        <button class="plus">+</button>
+                    `;
+
+                    const minusButton = card.querySelector('.minus');
+                    const plusButton = card.querySelector('.plus');
+                    const countElement = card.querySelector('.bookcount');
+
+                    plusButton.addEventListener('click', () => increase(countElement, book));
+                    minusButton.addEventListener('click', () => decrease(countElement));
+
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        bookdata();
+    </script>
+</body>
+</html>
